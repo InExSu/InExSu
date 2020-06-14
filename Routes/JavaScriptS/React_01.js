@@ -21,7 +21,20 @@ class LikeButton extends React.Component {
     );
   }
 }
-// 
+
 const domContainer = document.querySelector('#React_01_container'); //поиск div контейнера
 ReactDOM.render(e(LikeButton), domContainer);
 
+<!-- for test --!>
+function tick() {
+  const element = (
+    <div>
+      <h1>Hello, world!</h1>
+      <h2>It is {new Date().toLocaleTimeString()}.</h2>
+    </div>
+  );
+  // highlight-next-line
+  ReactDOM.render(element, document.getElementById('root'));
+}
+
+setInterval(tick, 1000);
